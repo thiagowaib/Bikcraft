@@ -57,6 +57,33 @@ p {
 .cta p {
   padding-bottom: 20px;
 }
+
+.quote-externa {
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.quote-externa p {
+  font-style: italic;
+  line-height: 20px;
+}
+
+.quote-externa p:before,
+.quote-externa p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 15px auto 10px auto;
+}
+.quote-externa cite {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
 /* = = = =  */
 
 /* Header */
@@ -67,6 +94,7 @@ p {
   position: fixed;
   top: 0;
   z-index: 2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.308);
 }
 
 .header_menu {
@@ -91,7 +119,6 @@ p {
 
 .header_menu ul a:hover {
   color: white;
-  font-size: 15px;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 /* = = = = */
@@ -103,7 +130,7 @@ p {
   background: url("../img/bg.jpg");
   background-size: cover;
   /* A margin tem tamanho do header */
-  margin-top: 95px;
+  margin-top: 92px;
   text-align: center;
 }
 
@@ -117,31 +144,6 @@ p {
   padding-top: 90px;
 }
 
-.quote-externa {
-  max-width: 300px;
-  margin: 0 auto;
-  color: white;
-  margin-bottom: 50px;
-}
-
-.quote-externa p {
-  font-style: italic;
-}
-
-.quote-externa p:before,
-.quote-externa p:after {
-  content: "";
-  display: block;
-  width: 60px;
-  border: 2px solid white;
-  border-radius: 10px;
-  margin: 15px auto 10px auto;
-}
-.quote-externa cite {
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 0.01em;
-}
 /* = = = = */
 
 /* Produtos */
@@ -152,11 +154,12 @@ p {
 .produtos_lista li {
   background: #fec63e; /* Amarelo */
   text-align: center;
-  /* A imagem também alinha através do text-align */
   margin-bottom: 50px;
+  transition: transform 0.2s;
 }
+
 .produtos_lista li:hover {
-  scale: 1.02;
+  transform: scale(1.05);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
@@ -194,5 +197,194 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 20px;
+}
+/* = = = = */
+
+/* Portfólio */
+.portfolio {
+  width: 100%;
+  background: #000000;
+  padding: 60px 0;
+}
+
+.portfolio .subtitulo {
+  color: #fec63e; /* Amarelo */
+}
+
+.portfolio .subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid #fec63e; /* Amarelo */
+  border-radius: 10px;
+  margin: 8px auto;
+}
+
+.portfolio ul li {
+  padding-bottom: 20px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.portfolio ul li:hover {
+  transform: scale(1.05);
+}
+
+.portfolio .cta p {
+  color: white;
+}
+
+.portfolio .botao:hover {
+  background: #fec63e; /* Amarelo */
+  border: 3px solid #ffffff;
+  border-radius: 2px;
+  padding: 8px 21px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.349);
+}
+/* = = = =  */
+
+/* QUALIDADE */
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  /* um SVG das linhas */
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  /* A posição absoluta passa a se referir a posição da tag pai. Como a posição-pai é relativa, o absolute fica em relação à pai. Caso contrário, seria a pagina web como todo */
+  position: absolute;
+  top: 208px;
+  left: 164px;
+}
+
+.qualidade img {
+  margin: 0 auto;
+  display: block;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.qualidade_lista li:hover {
+  scale: 1.02;
+}
+
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  letter-spacing: 0.1em;
+}
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 8px auto;
+}
+
+.qualidade_lista li p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  letter-spacing: 0.1em;
+}
+/* = = = = */
+
+/* Banner do Footer */
+.banner-footer {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.banner-footer .quote-externa {
+  max-width: 430px;
+}
+/* = = = = */
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: black;
+}
+
+.footer h3 {
+  color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 1px solid #fec63e;
+  border-radius: 10px;
+  margin: 6px 0 0px 0;
+}
+
+.footer p {
+  color: white;
+  padding-right: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+
+.footer ul li {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 4px;
+}
+.footer_img {
+  display: block;
+  border: 2px solid #fec63e;
+  border-radius: 3px;
+  padding: 6px;
+  transition: transform 0.2s;
+}
+
+.footer_img:hover {
+  transform: scale(1.1);
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 5px 0;
+}
+
+.copy p {
+  color: black;
+  padding-top: 15px;
+  text-align: center;
 }
 /* = = = = */
