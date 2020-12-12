@@ -1,0 +1,488 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.quote-externa {
+  max-width: 300px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.quote-externa p {
+  font-style: italic;
+  line-height: 20px;
+}
+
+.quote-externa p:before,
+.quote-externa p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 15px auto 10px auto;
+}
+.quote-externa cite {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+/* Header */
+.header {
+  width: 100%;
+  background-color: #fec63e; /* Amarelo */
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.308);
+}
+
+.header_menu {
+  text-align: right;
+  margin-top: 25px;
+}
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+.header_menu ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  /* O padding aumenta a area de contato! */
+}
+
+.header_menu ul a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+/* = = = = */
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 160px;
+  background: url("../img/bg-produtos.jpg");
+  background-size: cover;
+  /* A margin tem tamanho do header */
+  margin-top: 92px;
+  text-align: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.274);
+}
+
+.banner h1 {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  padding: 40px 0 0 0;
+}
+
+.banner h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px auto 0 auto;
+}
+
+.banner p {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding: 5px 0 0 0;
+}
+
+/* = = = = */
+
+/* Produtos */
+.produtos {
+  padding: 60px 0;
+}
+.heading {
+  display: inline-block;
+  padding: 10px 0;
+}
+.content {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+/* Específicos do P1 */
+.produto_01 .heading .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-passeio-1.jpg) no-repeat;
+}
+
+.produto_01 .heading .img h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.produto_01 .heading .img h1:before,
+.produto_01 .heading .img h1:after {
+  content: "";
+  width: 60px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.produto_01 .heading .icon {
+  height: 280px;
+  background-color: black;
+  text-align: center;
+}
+
+.produto_01 .heading .icon img {
+  margin-top: 70px;
+}
+
+.produto_01 .content .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-passeio-2.jpg) no-repeat;
+}
+
+.produto_01 .content {
+  padding-bottom: 40px;
+}
+
+/* Específicos do P2 */
+
+.produto_02 {
+  width: 100%;
+  background: black;
+}
+.produto_02 .heading .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-esporte-1.jpg) no-repeat;
+}
+
+.produto_02 .heading .img h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.produto_02 .heading .img h1:before,
+.produto_02 .heading .img h1:after {
+  content: "";
+  width: 60px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.produto_02 .heading .icon {
+  height: 280px;
+  border: 2px solid #fec63e;
+  background-color: black;
+  text-align: center;
+}
+
+.produto_02 .heading .icon img {
+  margin-top: 70px;
+}
+
+.produto_02 .content .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-esporte-2.jpg) no-repeat;
+}
+.produto_02 .content .text {
+  border: 2px solid #fec63e;
+}
+
+.content .text {
+  background-color: black;
+  height: 280px;
+  border: 2px solid black;
+}
+
+/* Específicos do P3 */
+
+.produto_03 .heading {
+  padding-top: 40px;
+}
+.produto_03 .heading .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-retro-1.jpg) no-repeat;
+}
+
+.produto_03 .heading .img h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.produto_03 .heading .img h1:before,
+.produto_03 .heading .img h1:after {
+  content: "";
+  width: 60px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.produto_03 .heading .icon {
+  height: 280px;
+  background-color: black;
+  text-align: center;
+}
+
+.produto_03 .heading .icon img {
+  margin-top: 70px;
+}
+
+.produto_03 .content .img {
+  height: 280px;
+  background: url(../img/produtos/bikcraft-retro-2.jpg) no-repeat;
+}
+
+.text p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 400px;
+  margin: 50px auto 25px auto;
+}
+.text ul li {
+  display: inline-block;
+  width: 225px;
+  height: 50px;
+  background: #fec63e;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 13px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ======== */
+
+/* Orçamento */
+.orçamento {
+  width: 100%;
+  padding: 40px;
+  background: black;
+}
+.orçamento h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fec63e;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.orçamento h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid #fec63e;
+  border-radius: 10px;
+  margin: 3px auto;
+}
+
+form label,
+.botão_form {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #fec63e;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.438);
+}
+
+.botão_form:hover {
+  background: #fec63e;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.349);
+  border-radius: 2px;
+  color: black;
+}
+
+.orçamento ul {
+  display: inline-block;
+  margin-left: 80px;
+}
+.orçamento ul li {
+  padding-bottom: 70px;
+}
+.orçamento h2 {
+  color: #fec63e;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.orçamento p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+.monte div {
+  width: 100%;
+  padding: 2px 0;
+}
+.monte .gray {
+  width: 100%;
+  background-color: #292929;
+}
+
+.monte .gray p {
+  background: #292929;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+/* ======== */
+
+/* Banner do Footer */
+.banner-footer {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.banner-footer .quote-externa {
+  max-width: 430px;
+}
+/* = = = = */
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding-top: 25px;
+  background: black;
+}
+
+.footer h3 {
+  color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 1px solid #fec63e;
+  border-radius: 10px;
+  margin: 6px 0 0px 0;
+}
+
+.footer p {
+  color: white;
+  padding-right: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+
+.footer ul li {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 4px;
+}
+.footer_img {
+  display: block;
+  border: 2px solid #fec63e;
+  border-radius: 3px;
+  padding: 6px;
+  transition: transform 0.2s;
+}
+
+.footer_img:hover {
+  transform: scale(1.1);
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 5px 0;
+}
+
+.copy p {
+  color: black;
+  padding-top: 15px;
+  text-align: center;
+}
+/* = = = = */

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <!-- Importa os scripts CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style_produtos.css">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft - Produtos</title>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <!-- LOGO -->
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="BikCraft">
+      </a>
+
+      <!-- MENU -->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="container">
+      <!-- TÍTULO -->
+      <h1>Produtos</h1>
+      <!-- SUBTÍTULO -->
+      <p>conheça mais sobre nossos produtos</p>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos">
+    <ul>
+      <!-- Produto 01 -->
+      <!--            -->
+      <li class="produto_01 container">
+
+        <!-- Heading -->
+        <div class="heading">
+          <div class="grid-11 img">
+            <h1>Passeio</h1>
+          </div>
+          <div class="grid-5 icon">
+            <img src="img/produtos/passeio.svg" alt="Passeio">
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+          <div class="grid-8 img">
+            <!-- Imagem 2 de Passeio -->
+          </div>
+          <div class="grid-8 text">
+            <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+            <ul>
+              <li>Conforto</li>
+              <li>Velocidade</li>
+              <li>Design</li>
+              <li>Versatilidade</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <!-- Fim do Produto 01 -->
+
+      <!-- Produto 02 -->
+      <!--            -->
+      <li class="produto_02">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading">
+            <div class="grid-11 img">
+              <h1>Esporte</h1>
+            </div>
+            <div class="grid-5 icon">
+              <img src="img/produtos/esporte.svg" alt="Passeio">
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="content">
+            <div class="grid-8 img">
+              <!-- Imagem 2 de Esporte -->
+            </div>
+            <div class="grid-8 text">
+              <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+              <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <!-- Fim do Produto 02 -->
+
+      <!-- Produto 03 -->
+      <!--            -->
+      <li class="produto_03">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading">
+            <div class="grid-11 img">
+              <h1>Retrô</h1>
+            </div>
+            <div class="grid-5 icon">
+              <img src="img/produtos/retro.svg" alt="Passeio">
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="content">
+            <div class="grid-8 img">
+              <!-- Imagem 2 de Esporte -->
+            </div>
+            <div class="grid-8 text">
+              <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+              <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <!-- Fim do Produto 03 -->
+    </ul>
+  </section>
+
+
+  <!-- ORÇAMENTO -->
+  <section class="orçamento">
+    <div class="container">
+      <h1>Orçamento</h1>
+      <form class="formulario grid-8" action="enviar.php" method="post" name="Orçamento">
+        <div><label for="nome">Nome<br></label>
+          <input type="text" id="nome" required></div>
+        <div><label for="email">E-mail<br></label>
+          <input type="email" id="email" required></div>
+        <div><label for="telefone">Telefone<br></label>
+          <input type="number" id="telefone"></div>
+        <div><label for="mensagem">Mensagem<br></label>
+          <textarea name="mensagem" rows="5" required></textarea></div>
+        <input class="botão_form" type="submit" value="Enviar">
+      </form>
+
+      <ul class="grid-6">
+        <li>
+          <h2>Dados</h2>
+          <p>+55 21 99999-9999<br> orcamento@bikcraft.com</p>
+        </li>
+        <li class="monte">
+          <h2>Monte a sua bikcraft</h2>
+          <div>
+            <p>Escolha as especificações</p>
+          </div>
+          <div class="gray">
+            <p>- Cores</p>
+          </div>
+          <div>
+            <p>- Estilo</p>
+          </div>
+          <div class="gray">
+            <p>- Acessórios</p>
+          </div>
+          <div>
+            <p>- Medidas</p>
+          </div>
+          <div class="gray">
+            <p>- E Outros</p>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- BANNER-FOOTER -->
+  <section class="banner-footer">
+    <div class="container">
+      <!-- CITAÇÃO -->
+      <blockquote class="quote-externa">
+        <p>"o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"</p>
+        <cite>William Morris</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- NOSSA HISTÓRIA -->
+      <div class="grid-8">
+        <h3>Nossa História</h3>
+        <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+      </div>
+
+      <!-- CONTATO -->
+      <div class="grid-4">
+        <h3>Contato</h3>
+        <ul>
+          <li>- 21 9999-9999</li>
+          <li>- contato@bikcraft.com</li>
+          <li>- Botafogo - RJ</li>
+        </ul>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="grid-4">
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="http://facebook.com"><img class="footer_img" src="img/redes-sociais/facebook.svg" alt="Bikcraft facebook"></a></li>
+          <li><a href="http://instagram.com"><img class="footer_img" src="img/redes-sociais/instagram.svg" alt="Bikcraft instagram"></a></li>
+          <li><a href="http://twitter.com"><img class="footer_img" src="img/redes-sociais/twitter.svg" alt="Bikcraft twitter"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy">
+      <div class="container">
+        <p>Bikcraft 2020 - Alguns direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

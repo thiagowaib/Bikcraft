@@ -7,30 +7,6 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.botao {
-  border: 3px solid #fec63e; /* Amarelo */
-  border-radius: 2px;
-  padding: 7px 20px;
-  text-decoration: none;
-  color: #fec63e; /* Amarelo */
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-}
-
-.botao:hover {
-  background: #fec63e; /* Amarelo */
-  border: 3px solid #000000;
-  border-radius: 2px;
-  padding: 8px 21px;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  font-weight: bolder;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
-}
-
 .subtitulo {
   font-weight: bold;
   font-size: 24px;
@@ -50,41 +26,6 @@ p {
   border-radius: 10px;
   margin: 8px auto;
 }
-
-.cta {
-  text-align: center;
-}
-.cta p {
-  padding-bottom: 20px;
-}
-
-.quote-externa {
-  max-width: 300px;
-  margin: 0 auto;
-  color: white;
-  margin-bottom: 50px;
-}
-
-.quote-externa p {
-  font-style: italic;
-  line-height: 20px;
-}
-
-.quote-externa p:before,
-.quote-externa p:after {
-  content: "";
-  display: block;
-  width: 60px;
-  border: 2px solid white;
-  border-radius: 10px;
-  margin: 15px auto 10px auto;
-}
-.quote-externa cite {
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 0.01em;
-}
-/* = = = =  */
 
 /* Header */
 .header {
@@ -126,8 +67,8 @@ p {
 /* Banner */
 .banner {
   width: 100%;
-  height: 380px;
-  background: url("../img/bg.jpg");
+  height: 160px;
+  background: url("../img/bg-sobre.jpg");
   background-size: cover;
   /* A margin tem tamanho do header */
   margin-top: 92px;
@@ -140,108 +81,96 @@ p {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 48px;
-  padding: 10px;
-  padding-top: 90px;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  padding: 30px 0 0 0;
 }
 
-/* = = = = */
-
-/* Produtos */
-.produtos {
-  padding: 60px 0;
-}
-
-.produtos_lista li {
-  background: #fec63e; /* Amarelo */
-  text-align: center;
-  margin-bottom: 50px;
-  transition: transform 0.2s;
-}
-
-.produtos_lista li:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
-}
-
-.produtos_lista li div {
-  /* Background do Ícone*/
-  background: black;
-  padding: 20px;
-}
-
-.produtos_lista li h3 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 5px;
-  margin-top: 5px;
-}
-.produtos_lista li h3:after {
+.banner h1:after {
   content: "";
   display: block;
   width: 60px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 2px solid white;
   border-radius: 10px;
-  margin: 5px auto;
+  margin: 5px auto 0 auto;
 }
 
-.produtos_lista li p {
-  margin: 0px 10px 10px 10px;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.produtos cta p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
-  line-height: 20px;
-}
-/* = = = = */
-
-/* Portfólio */
-.portfolio {
-  width: 100%;
-  background: #000000;
-  padding: 60px 0;
-}
-
-.portfolio .subtitulo {
-  color: #fec63e; /* Amarelo */
-}
-
-.portfolio .subtitulo:after {
-  content: "";
-  display: block;
-  width: 60px;
-  border: 2px solid #fec63e; /* Amarelo */
-  border-radius: 10px;
-  margin: 8px auto;
-}
-
-.portfolio ul li {
-  padding-bottom: 20px;
-  display: block;
-  transition: transform 0.2s;
-}
-
-.portfolio ul li:hover {
-  transform: scale(1.05);
-}
-
-.portfolio .cta p {
+.banner p {
+  text-decoration: none;
   color: white;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding: 5px 0 0 0;
 }
 
-.portfolio .botao:hover {
-  background: #fec63e; /* Amarelo */
+/* = = = = */
+
+/* Sobre */
+
+.sobre {
+  padding: 30px 0;
+}
+
+.sobre ul li {
+  display: inline-block;
+}
+
+.historia {
+  padding: 30px 30px 30px 0;
+}
+
+.valores {
+  padding: 30px 0 30px 30px;
+}
+.sobre h1 {
+  text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.349);
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
 }
-/* = = = =  */
+
+.sobre h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 5px 0 15px 0;
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sobre p span {
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #fec63e;
+}
+
+/* ==== */
+
+/* Break */
+
+.break {
+  padding: 20px 0;
+  background: black;
+}
+.break img {
+  transition: transform 0.2s;
+}
+
+.break img:hover {
+  transform: scale(1.01);
+}
+/* ==== */
 
 /* QUALIDADE */
 .qualidade {
@@ -299,25 +228,10 @@ p {
   letter-spacing: 0.1em;
 }
 /* = = = = */
-
-/* Banner do Footer */
-.banner-footer {
-  width: 100%;
-  height: 220px;
-  background: url("../img/bg-footer.jpg");
-  background-size: cover;
-  text-align: center;
-  padding-top: 60px;
-}
-
-.banner-footer .quote-externa {
-  max-width: 430px;
-}
-/* = = = = */
-
 /* Footer */
 .footer {
   width: 100%;
+  margin-top: 225px;
   background: black;
 }
 
