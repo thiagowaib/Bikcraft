@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
   <!-- Importa os scripts CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -13,10 +12,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft - Produtos</title>
+
 </head>
 
 
 <body>
+
 
   <!-- HEADER -->
   <header class="header">
@@ -51,7 +52,7 @@
 
   <!-- PRODUTOS -->
   <section class="produtos">
-    <ul>
+    <ul data-slide="portfolio">
       <!-- Produto 01 -->
       <!--            -->
       <li class="produto_01 container">
@@ -86,32 +87,30 @@
 
       <!-- Produto 02 -->
       <!--            -->
-      <li class="produto_02">
-        <div class="container">
-          <!-- Heading -->
-          <div class="heading">
-            <div class="grid-11 img">
-              <h1>Esporte</h1>
-            </div>
-            <div class="grid-5 icon">
-              <img src="img/produtos/esporte.svg" alt="Passeio">
-            </div>
+      <li class="produto_02 container">
+        <!-- Heading -->
+        <div class="heading">
+          <div class="grid-11 img">
+            <h1>Esporte</h1>
           </div>
+          <div class="grid-5 icon">
+            <img src="img/produtos/esporte.svg" alt="Passeio">
+          </div>
+        </div>
 
-          <!-- Content -->
-          <div class="content">
-            <div class="grid-8 img">
-              <!-- Imagem 2 de Esporte -->
-            </div>
-            <div class="grid-8 text">
-              <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
-              <ul>
-                <li>Conforto</li>
-                <li>Velocidade</li>
-                <li>Design</li>
-                <li>Versatilidade</li>
-              </ul>
-            </div>
+        <!-- Content -->
+        <div class="content">
+          <div class="grid-8 img">
+            <!-- Imagem 2 de Esporte -->
+          </div>
+          <div class="grid-8 text">
+            <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+            <ul>
+              <li>Conforto</li>
+              <li>Velocidade</li>
+              <li>Design</li>
+              <li>Versatilidade</li>
+            </ul>
           </div>
         </div>
 
@@ -120,32 +119,30 @@
 
       <!-- Produto 03 -->
       <!--            -->
-      <li class="produto_03">
-        <div class="container">
-          <!-- Heading -->
-          <div class="heading">
-            <div class="grid-11 img">
-              <h1>Retrô</h1>
-            </div>
-            <div class="grid-5 icon">
-              <img src="img/produtos/retro.svg" alt="Passeio">
-            </div>
+      <li class="produto_03 container">
+        <!-- Heading -->
+        <div class="heading">
+          <div class="grid-11 img">
+            <h1>Retrô</h1>
           </div>
+          <div class="grid-5 icon">
+            <img src="img/produtos/retro.svg" alt="Passeio">
+          </div>
+        </div>
 
-          <!-- Content -->
-          <div class="content">
-            <div class="grid-8 img">
-              <!-- Imagem 2 de Esporte -->
-            </div>
-            <div class="grid-8 text">
-              <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
-              <ul>
-                <li>Conforto</li>
-                <li>Velocidade</li>
-                <li>Design</li>
-                <li>Versatilidade</li>
-              </ul>
-            </div>
+        <!-- Content -->
+        <div class="content">
+          <div class="grid-8 img">
+            <!-- Imagem 2 de Esporte -->
+          </div>
+          <div class="grid-8 text">
+            <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+            <ul>
+              <li>Conforto</li>
+              <li>Velocidade</li>
+              <li>Design</li>
+              <li>Versatilidade</li>
+            </ul>
           </div>
         </div>
 
@@ -159,15 +156,19 @@
   <section class="orçamento">
     <div class="container">
       <h1>Orçamento</h1>
-      <form class="formulario grid-8" action="enviar.php" method="post" name="Orçamento">
+      <form class="formulario grid-8" action="php/form.php" method="post" name="Orçamento">
         <div><label for="nome">Nome<br></label>
-          <input type="text" id="nome" required></div>
+          <input type="text" id="nome" name="nome" required>
+        </div>
         <div><label for="email">E-mail<br></label>
-          <input type="email" id="email" required></div>
+          <input type="email" id="email" name="email" required>
+        </div>
         <div><label for="telefone">Telefone<br></label>
-          <input type="number" id="telefone"></div>
+          <input type="number" id="telefone" name="telefone">
+        </div>
         <div><label for="mensagem">Mensagem<br></label>
-          <textarea name="mensagem" rows="5" required></textarea></div>
+          <textarea name="mensagem" rows="5" id="mensagem" name="mensagem" required></textarea>
+        </div>
         <input class="botão_form" type="submit" value="Enviar">
       </form>
 
@@ -249,6 +250,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
+
+
 
 </html>
